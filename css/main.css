@@ -107,6 +107,11 @@ img {
     background-color: #fff;
     border-radius: 50%;
     padding: 6px;
+    border: 1px solid transparent;
+    transition: all 1s ease-in;
+}
+.header__span:hover{
+   border: 1px solid #333;
 }
 
 /* HERO */
