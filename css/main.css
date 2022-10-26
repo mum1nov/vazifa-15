@@ -11,6 +11,7 @@
     --header-btn-bgcolor: #333;
     --header-btn-color: #fff;
     --text-color: #fff;
+    --pricing-text-color:#22343D;
     
 
 }
@@ -24,6 +25,7 @@ html {
 
 * {
     box-sizing: border-box;
+  
 }
 
 body {
@@ -99,7 +101,7 @@ img {
 .header__btn:hover {
     background: #02897A;
     border-radius: 4px;
-    color: #fff;
+    color: #FFFFFF;
     transition: all 0.7s ease;
     
 }
@@ -191,6 +193,7 @@ img {
 
 .foryou {
     background-image: url(../images/hero/Bg.png);
+    background-image: --;
     background-repeat: no-repeat;
     background-position: center top +230px;
     padding-bottom: 90px;
@@ -300,3 +303,259 @@ img {
     #F03E3D;
 }
 /* MANAGEMENT */
+
+
+
+/* contact */
+
+.contact{
+    background-image: url(../images/hero/Bg3.png);
+    background-position: center top+30px;
+    background-repeat: no-repeat;
+}
+.contact__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #22343D;
+}
+.contact__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #22343D;
+}
+.contact__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+.contact__item{
+    position: relative;
+    padding: 15px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    width: 263px;
+}
+.contact__item::after{
+    background-image: url(../images/hero/opa.png);
+    width: 98px;
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.contact__link{
+    padding: 15px 30px;
+    background-color:  #02897A;
+    width: 216px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* contact */
+
+/* PRICING */
+
+.pricing{
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+.pricing__title{
+    text-align: center;
+}
+.pricing__title:nth-child(1){
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #22343D;
+    margin-bottom: 32px;
+    color: var(--text-color);
+}
+.pricing__title:nth-child(2){
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #22343D;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+.pricing__text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #22343D;
+    color: var(--text-color);
+    margin-bottom: 49px;
+}
+.pricing__list{
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   gap: 40px;
+   
+   
+}
+.pricing__item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    align-items: center;
+    padding: 32px 0px;
+    background-color: var(--text-color);
+    color: var(--pricing-text-color);
+    }
+
+
+.pricing__item:hover{
+    background: #02897A;
+    color: #fff;
+}
+.pricing__name{
+    text-align: center;
+    color: var(--pricing-text-color);
+}
+.pricing__name:hover{
+    color: #fff;
+}
+.prices{
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #02897A;
+    text-decoration: none;
+    /* padding-right: 8px; */
+}
+.prices:hover{
+    color: #fff;
+}
+sup{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #02897A;
+}
+sup:hover{
+    color: #fff;
+}
+
+sub{
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 119% */
+
+letter-spacing: 0.1px;
+
+color: #AFAFAF;
+}
+
+.pricing__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+.pricing__info{
+    color: var(--pricing-text-color);
+}
+.pricing__info:hover{
+    color: #fff;
+}
+.pricing__link{
+    padding: 11px 18px;
+    background-color: #02897A;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 49px;
+}
+.pricing__link:hover{
+    background-color: #fff;
+    color: #02897A;
+}
+/* PRICING */
+/* ENTERPRICE */
+
+.enterprice{
+    background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+}
+.enterprice__link{
+    padding: 11px 18px;
+    width: 188px;
+    background-color: #02897A;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.enterprice__link:hover{
+    background-color: #fff;
+    color: #02897A;
+}
+
+/* ENTERPRICE */
+
+/* PRODUCT */
+
+.product__inner{
+    background-image: url(../images/product/bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 528px 392px ;
+}
+.product__title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: #22343D;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 69px;
+}
+.product__list{
+    width: 535px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.product__name{
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #22343D;
+    color: var(--text-color);
+}
+
+.product__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #22343D;
+    color: var(--text-color);
+}
+/* PRODUCT */
+
+/* QUESTION */
+
+.question__list{
+    display: flex;
+    flex-direction: column;
+}
+
+/* QUESTION */
