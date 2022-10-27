@@ -334,6 +334,12 @@ img {
     flex-direction: column;
     row-gap: 10px;
     margin-bottom: 30px;
+    position: relative;
+}
+.contact__list::before{
+    content: url(../images/hero/opa.png);
+    position: absolute;
+    width: ;
 }
 .contact__item{
     position: relative;
@@ -361,7 +367,18 @@ img {
 }
 
 /* contact */
+/* strategies */
+.strategies{
+    background-color: #E5E5E5;
+}
+.strategies__item{
+    padding: 0px 24px 30px;
+    background-color: #fff;
+}
 
+
+
+/* strategies */
 /* PRICING */
 
 .pricing{
@@ -582,7 +599,7 @@ padding-bottom: 150px;
     color: #22343D;
     padding-bottom:22px ;
     border-bottom:  1px solid #E7E7E7;
-  
+    
 }
 .question__text1{
     font-weight: 400;
@@ -590,6 +607,16 @@ padding-bottom: 150px;
     line-height: 27px;
     color: #22343D;
     text-align: center;
+}
+.question__item{
+    position: relative;
+    
+}
+.question__item::before{
+    content: url(../images/hero/plus_circle.png)
+    ;
+    background-position:  left top +50px;
+    
 }
 
 
